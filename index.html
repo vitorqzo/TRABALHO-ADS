@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Produtos - Mercearia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.4.29/sweetalert2.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.4.29/sweetalert2.all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Controle de Produtos</h1>
+
+
+        <form id="productForm" class="form">
+            <input type="text" id="productName" placeholder="Nome do Produto" required>
+            <input type="number" id="productPrice" placeholder="Preço do Produto (R$)" step="0.01" required>
+            <input type="number" id="productStock" placeholder="Quantidade em Estoque" required>
+            <input type="date" id="expiryDate" placeholder="Data de Validade" required>
+            <button type="submit">Salvar Produto</button>
+        </form>
+
+        <!-- Mensagem para escanear o código de barras -->
+        <p class="scan-message">Escaneie o código de barras para cadastrar automaticamente.</p>
+
+        <h2>Lista de Produtos</h2>
+        <input type="text" id="searchBar" placeholder="Buscar produto..." class="search-bar">
+
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Estoque</th>
+                    <th>Validade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <button id="showProducts">Obter Relação de Produtos</button>
+        <div id="productList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

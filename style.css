@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('image.jpeg'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form input {
+    flex: 1 1 48%;
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form button {
+    flex: 1 1 100%; 
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form button:hover {
+    background-color: #218838;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+button.edit, button.delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.delete:hover {
+    background-color: #c82333;
+}
+
+.product-list {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+.scan-message {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #e7f3fe; 
+    color: #31708f; 
+    border: 1px solid #bcdff1; 
+    border-radius: 4px;
+    font-weight: bold;
+}
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-list th, .product-list td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.product-list th {
+    background-color: #f2f2f2; 
+}
+
+.product-list tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.alert-warning {
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
